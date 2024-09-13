@@ -6,6 +6,6 @@ void main() {
   runApp(GetMaterialApp(
     theme: ThemeData(useMaterial3: true),
     debugShowCheckedModeBanner: false,
-    home: TicTacToePage(),
+    home: const TicTacToePage(),
   ));
 }
