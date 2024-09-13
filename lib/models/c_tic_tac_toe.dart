@@ -52,31 +52,34 @@ class TicTacToeController extends GetxController {
     if (drawww) {
       Get.dialog(
           barrierDismissible: false,
-          Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const Text(
-                  "Draw",
-                  style: TextStyle(
-                    fontSize: 30,
-                    color: Colors.white,
-                  ),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                IconButton(
-                    onPressed: () {
-                      resetGame();
-                      Get.back();
-                    },
-                    icon: const Icon(
-                      Icons.replay,
-                      size: 40,
+          Material(
+            color: Colors.transparent,
+            child: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Text(
+                    "Draw",
+                    style: TextStyle(
+                      fontSize: 30,
                       color: Colors.white,
-                    ))
-              ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  IconButton(
+                      onPressed: () {
+                        resetGame();
+                        Get.back();
+                      },
+                      icon: const Icon(
+                        Icons.replay,
+                        size: 40,
+                        color: Colors.white,
+                      ))
+                ],
+              ),
             ),
           ));
     }
@@ -93,31 +96,34 @@ class TicTacToeController extends GetxController {
         (check(2, data)) && (check(4, data)) && (check(6, data))) {
       Get.dialog(
           barrierDismissible: false,
-          Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  data == "CrossPainter" ? "X Win" : "O Win",
-                  style: const TextStyle(
-                    fontSize: 30,
-                    color: Colors.white,
-                  ),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                IconButton(
-                    onPressed: () {
-                      resetGame();
-                      Get.back();
-                    },
-                    icon: const Icon(
-                      Icons.replay,
-                      size: 40,
+          Material(
+            color: Colors.transparent,
+            child: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    data == "CrossPainter" ? "X Win" : "O Win",
+                    style: const TextStyle(
+                      fontSize: 30,
                       color: Colors.white,
-                    ))
-              ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  IconButton(
+                      onPressed: () {
+                        resetGame();
+                        Get.back();
+                      },
+                      icon: const Icon(
+                        Icons.replay,
+                        size: 40,
+                        color: Colors.white,
+                      ))
+                ],
+              ),
             ),
           ));
     } else {
