@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 import 'package:tic_tac_toe/models/w_tic_tac_toe.dart';
 import 'package:get/get.dart';
 
@@ -74,7 +75,7 @@ class TicTacToeController extends GetxController {
                         Get.back();
                       },
                       icon: const Icon(
-                        Icons.replay,
+                        Iconsax.refresh,
                         size: 40,
                         color: Colors.white,
                       ))
@@ -118,7 +119,7 @@ class TicTacToeController extends GetxController {
                         Get.back();
                       },
                       icon: const Icon(
-                        Icons.replay,
+                        Iconsax.refresh,
                         size: 40,
                         color: Colors.white,
                       ))

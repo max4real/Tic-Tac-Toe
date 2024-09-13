@@ -4,7 +4,7 @@ class HashPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     Paint hashPaint = Paint();
-    hashPaint.color = Colors.green;
+    hashPaint.color = const Color(0xFF607D8B);
     hashPaint.style = PaintingStyle.stroke;
     hashPaint.strokeWidth = 8;
 
@@ -51,7 +51,7 @@ class CirclePainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     //draw circle
     Paint signPaint = Paint();
-    signPaint.color = Colors.blue;
+    signPaint.color = Colors.green;
     signPaint.style = PaintingStyle.stroke;
     signPaint.strokeWidth = 3;
     const circleRadius = 30.0;

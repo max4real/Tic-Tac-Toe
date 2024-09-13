@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:iconsax/iconsax.dart';
 import 'package:tic_tac_toe/models/c_tic_tac_toe.dart';
 import 'package:tic_tac_toe/models/w_tic_tac_toe.dart';
 
@@ -22,7 +23,7 @@ class TicTacToePage extends StatelessWidget {
               onPressed: () {
                 controller.resetGame();
               },
-              child: const Icon(Icons.replay_outlined)),
+              child: const Icon(Iconsax.refresh)),
           const SizedBox(
             width: 20,
           )
